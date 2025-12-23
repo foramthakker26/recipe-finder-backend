@@ -6,11 +6,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+mongoose.connect(
+  "mongodb+srv://foram26:Foram2618@cluster0.il3arlv.mongodb.net/recipedb"
+)
 
-mongoose
-  .connect(
-    "mongodb+srv://foram26:db_thfo2618@cluster0.il3arlv.mongodb.net/recipedb"
-  )
+  
   .then(() => console.log("✅ MongoDB Atlas connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
