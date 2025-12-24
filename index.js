@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 mongoose.connect(
-  "mongodb+srv://foram26:Foram2618@cluster0.il3arlv.mongodb.net/recipedb"
+  "mongodb+srv://foram26:thfo2618@cluster0.il3arlv.mongodb.net/recipedb"
 )
 
   
